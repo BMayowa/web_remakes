@@ -62,6 +62,35 @@
         </button>
     </nav>
 
+    <nav class="navbar primary-navbar d-none overflow-hidden transition:height_400ms_ease">
+        <div class="container">
+            <div class="navbar-header d-none">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main_nav"
+                        aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">
+                    <img id='id_logo' src="./assets/images/PA-logo.svg" width="225">
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="main_nav">
+                <ul class="nav navbar-nav navbar-right flex flex-column align-items-stretch list-type-none pad-0 lh-6">
+                    <li class="visible-xs pct:w-100"><a href="" target="_parent" class="feedback_link d-block decoration-none color-initial pad-x6">Send feedback</a></li>
+                    <li class="visible-xs pct:w-100"><a href="/forums/" target="_parent" class="forums_link d-block decoration-none color-initial pad-x6">Forums</a></li>
+                    <li class="visible-xs pct:w-100"><a href="https://help.pythonanywhere.com/" target="_parent" class="help_link d-block decoration-none color-initial pad-x6">Help</a></li>
+                    <li class="visible-xs pct:w-100"><a href="https://blog.pythonanywhere.com/" target="_parent" class="blog_link d-block decoration-none color-initial pad-x6">Blog</a></li>
+                    <li class="visible-xs pct:w-100"><a style="" href="/pricing/" target="_parent" class="pricing_link d-block decoration-none color-initial pad-x6">Pricing & signup</a></li>
+                    <li class="visible-xs pct:w-100"><a href="/login/?next=/" class="login_link d-block decoration-none color-initial pad-x6" target="_parent">Log in</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
     <section class="pct:w-100 bg-blue-inverse overflow-x-hidden">
         <section class="flex flex-row flex-wrap lg:justify-start justify-center lg:align-items-start align-items-center pct:w-100 mg-x-auto lg:pad-y12 pad-y8 transition:padding_400ms_ease_200ms">
             <div class="relative lg:pad-x12 md:pad-x8 pad-x4 lg:pct:flex-basis-50 md:pct:flex-basis-100">
@@ -139,7 +168,7 @@
     <section id="id-hosting-details" class="details-stripe bg-lighter">
         <section>
             <header class="font-24 font-bold pad-y8 text-center">Get a Python website in minutes</header>
-            <div class="lg:pct:w-72 lg:mg-x-auto font-14 lh-36">
+            <div class="lg:pct:w-72 lg:mg-x-auto font-14 lh-36 pad-x4 lg:pad-unset">
                 We make a normally complicated process very simple, letting you focus on creating exciting applications for
                 your users.
                 Launching a new Django project is
@@ -149,7 +178,7 @@
                 works.
             </div>
         </section>
-        <section class="flex flex-row justify-around lg:pct:w-72 pad-y4 mg-x-auto">
+        <section class="flex flex-column align-items-center lg:flex-row lg:justify-around lg:pct:w-72 pad-y4 mg-x-auto">
             <section class="pad-x4">
                 <header class="font-18 font-bold pad-y4">Your choice</header>
                 <div class="font-12 lh-32">
@@ -180,7 +209,7 @@
             </section>
         </section>
         <section class="bg-blue-inverse">
-            <div class="carousel slide flex flex-column pad-x2">
+            <div class="carousel slide flex flex-column lg:pad-x2">
                 <div class="carousel-inner flex flex-row flex-nowrap justify-between overflow-x-auto pct:max-w-100 lh-32 pad-x4 pad-y8">
                     <div class="item active shadow align-self-start flex-grow flex-noshrink bg-lighter mg-x2 pad-y8 pad-x2 radius pct:w-88 lg:pct:w-25 shadow:0px-4px-16px-777B">
                         <blockquote class="twitter-tweet d-block" data-lang="en">
@@ -334,9 +363,14 @@
                 </div>
             </div>
         </section>
+    </section>
+
+    <section id="id_develop_anywhere_details" class="details-stripe bg-F2F2F2">
         <section class="">
-            <header class="font-24 font-bold pad-y8 text-center">Python coding on the web: <span id="id_console_count">26,678,491</span> consoles served!</header>
-            <div class="lg:pct:w-72 lg:mg-x-auto font-14 lh-36">
+            <header class="font-24 font-bold pad-y8 text-center">Python coding on the web: <span
+                    id="id_console_count">26,678,491</span> consoles served!
+            </header>
+            <div class="lg:pct:w-72 lg:mg-x-auto font-14 lh-36 pad-x4 lg:pad-unset">
                 PythonAnywhere makes it easy to create and run Python programs
                 in the cloud. You can write your programs in a web-based editor
                 or just run a console session from any modern web browser.
@@ -350,6 +384,427 @@
                 Sign up and try it out! &raquo;
             </a>
         </section>
+        <section class="">
+            <div class="carousel slide flex flex-column lg:pad-x2">
+                <div class="carousel-inner flex flex-row flex-nowrap justify-between overflow-x-auto pct:max-w-100 lh-32 pad-x4 pad-y8">
+                    <div class="item active shadow align-self-start flex-grow flex-noshrink bg-lighter mg-x2 pad-y8 pad-x2 radius pct:w-88 lg:pct:w-25 shadow:0px-4px-16px-BBBB bg-white">
+                        <blockquote class="twitter-tweet" data-lang="en">
+                            <p lang="en" dir="ltr">Just a semi-regular reminder that the wonderful @pythonanywhere
+                                are wonderfully wonderful. :-)</p>&mdash; Nicholas Tollervey (@ntoll) November 15,
+                            2017
+                        </blockquote>
+                    </div>
+                    <div class="item active shadow align-self-start flex-grow flex-noshrink bg-lighter mg-x2 pad-y8 pad-x2 radius pct:w-88 lg:pct:w-25 shadow:0px-4px-16px-BBBB bg-white">
+                        <blockquote class="twitter-tweet" data-lang="en">
+                            <p lang="en" dir="ltr">Oh @pythonanywhere I love you! Just so easy to have a friendly
+                                environment to play in.
+                                Of course I love #python too!</p>&mdash; Psylica Labs (@PsylicaLabs) May 5, 2017
+                        </blockquote>
+                    </div>
+                    <div class="item active shadow align-self-start flex-grow flex-noshrink bg-lighter mg-x2 pad-y8 pad-x2 radius pct:w-88 lg:pct:w-25 shadow:0px-4px-16px-BBBB bg-white">
+                        <blockquote class="twitter-tweet" data-lang="en">
+                            <p lang="en" dir="ltr">Making a @SlackHQ-bot using @api_ai, a python script hosted on
+                                @pythonanywhere that pulls
+                                data from @airtable: it&#39;s great to live in #2017!</p>&mdash; Michiel Rutjes
+                            (@michielrutjes) February 13, 2017
+                        </blockquote>
+                    </div>
+                    <div class="item active shadow align-self-start flex-grow flex-noshrink bg-lighter mg-x2 pad-y8 pad-x2 radius pct:w-88 lg:pct:w-25 shadow:0px-4px-16px-BBBB bg-white">
+                        <blockquote class="twitter-tweet" data-lang="en">
+                            <p lang="en" dir="ltr">@pythonanywhere I&#39;ve just finished configuring my 🐍 script on
+                                your servers. Incredibly fast to
+                                deploy. Great service, guys.</p>&mdash; El Gonzi (@GonzaloRMDT) February 12, 2017
+                        </blockquote>
+                    </div>
+                    <div class="item active shadow align-self-start flex-grow flex-noshrink bg-lighter mg-x2 pad-y8 pad-x2 radius pct:w-88 lg:pct:w-25 shadow:0px-4px-16px-BBBB bg-white">
+                        <blockquote class="twitter-tweet" data-lang="en">
+                            <p lang="en" dir="ltr">For whipping up something when you are not in your environment,
+                                @pythonanywhere is very impressive,
+                                even free tier.</p>&mdash; Michael Wexler (@mwexler) December 7, 2016
+                        </blockquote>
+                    </div>
+                    <div class="item active shadow align-self-start flex-grow flex-noshrink bg-lighter mg-x2 pad-y8 pad-x2 radius pct:w-88 lg:pct:w-25 shadow:0px-4px-16px-BBBB bg-white">
+                        <blockquote class="twitter-tweet" data-lang="en">
+                            <p lang="en" dir="ltr">I&#39;m in love with @pythonanywhere.<br>Deploying my python
+                                projects have never been easier.</p>&mdash;
+                            Fadilullah (@__olamilekan__) December 1, 2016
+                        </blockquote>
+                    </div>
+                    <div class="item active shadow align-self-start flex-grow flex-noshrink bg-lighter mg-x2 pad-y8 pad-x2 radius pct:w-88 lg:pct:w-25 shadow:0px-4px-16px-BBBB bg-white">
+                        <blockquote class="twitter-tweet" data-lang="en">
+                            <p lang="en" dir="ltr">The service which brings me the most value? @pythonanywhere.
+                                Running apps in the cloud without
+                                worrying about my laptop battery running out.</p>&mdash; Joseph MacMillan
+                            (@JoeMacM38) November 5, 2016
+                        </blockquote>
+                    </div>
+                    <div class="item active shadow align-self-start flex-grow flex-noshrink bg-lighter mg-x2 pad-y8 pad-x2 radius pct:w-88 lg:pct:w-25 shadow:0px-4px-16px-BBBB bg-white">
+                        <blockquote class="twitter-tweet" data-lang="en">
+                            <p lang="en" dir="ltr">Just signed up for @pythonanywhere and I&#39;m loving it. I wish
+                                Ive used it since I started
+                                coding.</p>&mdash; Fabio Rosa (@fabiomrosa) November 5, 2016
+                        </blockquote>
+                    </div>
+                    <div class="item active shadow align-self-start flex-grow flex-noshrink bg-lighter mg-x2 pad-y8 pad-x2 radius pct:w-88 lg:pct:w-25 shadow:0px-4px-16px-BBBB bg-white">
+                        <blockquote class="twitter-tweet" data-lang="en">
+                            <p lang="en" dir="ltr">The simplicity on @pythonanywhere &lt;3</p>&mdash; Stephanie
+                            Frias (@la__steph) July 19, 2016
+                        </blockquote>
+                    </div>
+                    <div class="item active shadow align-self-start flex-grow flex-noshrink bg-lighter mg-x2 pad-y8 pad-x2 radius pct:w-88 lg:pct:w-25 shadow:0px-4px-16px-BBBB bg-white">
+                        <blockquote class="twitter-tweet" data-lang="en">
+                            <p lang="en" dir="ltr">A brilliantly simple website to run python in the cloud, it was
+                                so easy to get started #python
+                                #datascience</p>&mdash; Andrew Cantos (@andrewcantos) 18 March 2016
+                        </blockquote>
+                    </div>
+                    <div class="item active shadow align-self-start flex-grow flex-noshrink bg-lighter mg-x2 pad-y8 pad-x2 radius pct:w-88 lg:pct:w-25 shadow:0px-4px-16px-BBBB bg-white">
+                        <blockquote class="twitter-tweet" data-lang="en">
+                            <p lang="en" dir="ltr">Thank you @pythonanywhere for being easy to use - may have saved
+                                my ass-wait for it-ignment
+                                for today</p>&mdash; Brynjólfur M. Georgs (@binnimar82) 15 January 2016
+                        </blockquote>
+                    </div>
+                    <div class="item active shadow align-self-start flex-grow flex-noshrink bg-lighter mg-x2 pad-y8 pad-x2 radius pct:w-88 lg:pct:w-25 shadow:0px-4px-16px-BBBB bg-white">
+                        <blockquote class="twitter-tweet" data-lang="en">
+                            <p lang="en" dir="ltr">So happy I discovered @pythonanywhere last night. Pandas, numpy,
+                                Cairo all there. Saved a
+                                weekend of fighting with app engine</p>&mdash; David Pier (@DrDavidPier) 19 November
+                            2015
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="flex flex-row justify-around flex-wrap lg:pct:w-72 pad-y4 mg-x-auto">
+            <section class="pad-x4 mg-y4 lg:pct:w-50">
+                <header class="font-18 font-bold pad-y4">Powerful Servers</header>
+                <div class="font-12 lh-32">
+                    It's hard to write programs or play with ideas on the go. Because PythonAnywhere runs on our
+                    servers
+                    and displays in your web browser, you can write Python applications from your iPad, phone, or
+                    smart
+                    TV just as easily as you can from your computer. It works on the iPad, and we are in beta for
+                    Android devices.
+                </div>
+            </section>
+            <section class="pad-x4 mg-y4 lg:pct:w-50">
+                <header class="font-18 font-bold pad-y4">Batteries included</header>
+                <div class="font-12 lh-32">
+                    With Python versions 2.7, 3.6, 3.7, 3.8, 3.9 and 3.10, and all the goodies
+                    you normally find in a Python installation, PythonAnywhere is also
+                    preconfigured with loads of useful libraries, like NumPy, SciPy,
+                    Mechanize, BeautifulSoup, pycrypto, and many others. Check out
+                    our full list of <a href="/batteries_included/">batteries included</a>.
+                </div>
+            </section>
+            <section class="pad-x4 mg-y4 lg:pct:w-50">
+                <header class="font-18 font-bold pad-y4">Your Files, everywhere</header>
+                <div class="font-12 lh-32">
+                    It's easy to get your stuff into and out of PythonAnywhere — you can upload and download files
+                    from
+                    our web UI, or bring up a command line to work with your git, mercurial or subversion projects
+                    from
+                    GitHub, Bitbucket, or from any public source code repository. With 512Mb of free disk space, you
+                    don't need to worry about running out of space. And <a href="/pricing/" class>paying users</a>
+                    can
+                    get more space, and use scp and SFTP.
+                </div>
+            </section>
+            <section class="pad-x4 mg-y4 lg:pct:w-50">
+                <header class="font-18 font-bold pad-y4">Simple Automation</header>
+                <div class="font-12 lh-32">
+                    Use PythonAnywhere's scheduled tasks to run your Python scripts periodically. Scrape websites,
+                    archive tweets, connect back to your home automation system to turn the toaster on... the choice
+                    is
+                    yours!
+                </div>
+            </section>
+        </section>
+    </section>
+
+    <section id="id_education_details" class="details-stripe">
+        <section class="">
+            <header class="font-24 font-bold pad-y8 text-center">A Python learning environment with everything ready to go</header>
+            <div class="lg:pct:w-72 lg:mg-x-auto font-14 lh-36 pad-x4 lg:pad-unset">
+                Python is a great language for teaching, but getting it
+                installed and set up on all your students' computers can
+                be less than easy. PythonAnywhere provides an environment
+                that's ready to go &mdash; including a syntax-highlighting,
+                error-checking editor, Python 2 and 3 consoles, and a full set
+                of <a href="/batteries_included/">batteries included</a>.
+                Avoid all the hassles of getting Python installed on everyone's laptop,
+                and making sure everyone can pip install all the right packages.
+            </div>
+            <img src="./assets/images/education_screenshot.png"
+                 style="max-width: 100%; padding: 5px; border: solid 1px rgba(0, 0, 0, 0.2); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1)"
+                 class="d-block mg-x-auto mg-y8"/>
+        </section>
+        <section class="flex flex-row justify-between flex-wrap lg:flex-nowrap lg:pct:w-72 pad-y4 mg-x-auto">
+            <section class="flex flex-column lg:flex-basis pct:w-100 lg:pct:w-50">
+                <section class="pad-x4 mg-y4 lg:pct:w-100">
+                    <header class="font-18 font-bold pad-y4">Distributing assignments and monitoring progress is easy</header>
+                    <div class="font-12 lh-32">
+                        Once a student has nominated you as their teacher,
+                        you can see their files and Python consoles, so you can help them more
+                        easily. You can copy files
+                        into their accounts so that you can give them a starting point for their
+                        assignments, and you can see their solutions.
+                        <p>
+                            We can even create student accounts in bulk for you, and
+                            pre-populate them with files that you provide &mdash;
+                            <a href="" class="feedback_link">just let us know!</a>
+                        </p>
+                    </div>
+                </section>
+                <section class="pad-x4 mg-y4 lg:pct:w-100">
+                    <header class="font-18 font-bold pad-y4">All your students have the same environment</header>
+                    <div class="font-12 lh-32">
+                        The same operating system, the same console, the same text editor &mdash; save
+                        yourself from having to customise your lessons and instructions for
+                        Windows/Mac/Linux, and from having to debug issues in different shells and
+                        editors.
+                    </div>
+                </section>
+                <section class="pad-x4 mg-y4 lg:pct:w-100">
+                    <header class="font-18 font-bold pad-y4">...and they can work together</header>
+                    <div class="font-12 lh-32">
+                        Your students can choose to share their consoles with each other, too
+                        &mdash; so they can work on group projects remotely, or help each other
+                        in-class.
+                    </div>
+                </section>
+
+            </section>
+            <section class="flex flex-column lg:flex-basis lg:pct:w-50">
+                <section class="pad-x4 mg-y4 lg:pct:w-100">
+                    <header class="font-18 font-bold pad-y4">Start work at work or at school, and continue at home</header>
+                    <div class="font-12 lh-32">
+                        Because PythonAnywhere is web-based, it can follow you around on any computer
+                        (or iPad, or Chromebook) with a browser, so you or your students can work
+                        from wherever you like.
+                    </div>
+                </section>
+                <section class="pad-x4 mg-y4 lg:pct:w-100">
+                    <header class="font-18 font-bold pad-y4">What does it cost?</header>
+                    <div class="font-12 lh-32">
+                        It's free! Our basic accounts are free, and we only charge for more advanced
+                        services (like professional web app hosting, or big number-crunching
+                        requirements), none of which are needed for basic "intro to programming" type
+                        courses. If you need larger amounts of processing power, then
+                        <a href="" class="feedback_link">get in touch</a> &mdash; you can also
+                        get an idea of our prices on <a href="/pricing/">the pricing page</a>.
+                    </div>
+                </section>
+                <section class="pad-x4 mg-y4 lg:pct:w-100">
+                    <header class="font-18 font-bold pad-y4">Limitations</header>
+                    <div class="font-12 lh-32">
+                        Our education support is evolving rapidly, and there are a few
+                        limitations right now; check out
+                        <a href="https://help.pythonanywhere.com/pages/Education#some-limitations">this help page</a>
+                        for the current list.
+                    </div>
+                </section>
+                <section class="pad-x4 mg-y4 lg:pct:w-100">
+                    <header class="font-18 font-bold pad-y4">Ready to help whenever needed</header>
+                    <a class="btn btn-primary" href="/wiki/Education">PythonAnywhere education help pages &raquo;</a>
+                    <div class="font-12 lh-32">
+
+                    </div>
+                </section>
+            </section>
+        </section>
+        <section class="lg:pct:w-72 mg-x-auto">
+            <div class="carousel slide flex flex-column">
+                <div class="carousel-inner flex flex-row flex-nowrap justify-between overflow-x-auto pct:max-w-100 lh-32 pad-x4 pad-y8">
+                    <div class="item active shadow align-self-start flex-grow flex-noshrink bg-lighter mg-x2 pad-y8 pad-x2 radius pct:w-88 lg:pct:w-28 shadow:0px-4px-16px-BBBB bg-white">
+                        <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Dear Python
+                            Anywhere @pythonanywhere , Thank you, You make it possible for people like me to
+                            build life long skills that I can use anywhere!</p>&mdash; Neil Berger
+                            (@neiljacob23) July 27, 2017
+                        </blockquote>
+                    </div>
+
+                    <div class="item active shadow align-self-start flex-grow flex-noshrink bg-lighter mg-x2 pad-y8 pad-x2 radius pct:w-88 lg:pct:w-28 shadow:0px-4px-16px-BBBB bg-white">
+                        <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">@pythonanywhere
+                            couldn&#39;t be any easier to set up and use. super excited to test our student
+                            on-track app with teachers when school starts!</p>&mdash; Nicki (@nanselm2) August
+                            31, 2016
+                        </blockquote>
+                    </div>
+
+                    <div class="item active shadow align-self-start flex-grow flex-noshrink bg-lighter mg-x2 pad-y8 pad-x2 radius pct:w-88 lg:pct:w-28 shadow:0px-4px-16px-BBBB bg-white">
+                        <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Anaconda from
+                            @ContinuumIO + @pythonanywhere + @github = great way to learn webdev w/ Flask. Make
+                            your teacher a mentor online. Geek out!</p>&mdash; Kirby Urner (@4DsolutionsPDX)
+                            July 31, 2016
+                        </blockquote>
+                    </div>
+
+                    <div class="item active shadow align-self-start flex-grow flex-noshrink bg-lighter mg-x2 pad-y8 pad-x2 radius pct:w-88 lg:pct:w-28 shadow:0px-4px-16px-BBBB bg-white">
+                        <blockquote class="twitter-tweet" data-lang="en-gb"><p lang="en" dir="ltr">In better
+                            news, @pythonanywhere made it CRAZY easy to pair with a learner today. SO great.
+                            Continues to be the best resource in Python.</p>&mdash; Raymond Berg (@raymondberg)
+                            19 May 2016
+                        </blockquote>
+                    </div>
+
+                    <div class="item active shadow align-self-start flex-grow flex-noshrink bg-lighter mg-x2 pad-y8 pad-x2 radius pct:w-88 lg:pct:w-28 shadow:0px-4px-16px-BBBB bg-white">
+                        <blockquote class="twitter-tweet" data-lang="en-gb"><p lang="en" dir="ltr">
+                            @pythonanywhere the teacher feature is awesome! I love it :D</p>&mdash; Arjoonn
+                            Sharma (@arjoonn1) 1 March 2016
+                        </blockquote>
+                    </div>
+
+                    <div class="item active shadow align-self-start flex-grow flex-noshrink bg-lighter mg-x2 pad-y8 pad-x2 radius pct:w-88 lg:pct:w-28 shadow:0px-4px-16px-BBBB bg-white">
+                        <blockquote class="twitter-tweet" data-lang="en-gb"><p lang="en" dir="ltr">Recommended
+                            @pythonanywhere to a new Parseltongue. Was not wrong! He ran into an issue and we
+                            fixed it in minutes thanks to console-sharing.</p>&mdash; Raymond Berg
+                            (@raymondberg) 9 January 2016
+                        </blockquote>
+                    </div>
+
+                    <div class="item active shadow align-self-start flex-grow flex-noshrink bg-lighter mg-x2 pad-y8 pad-x2 radius pct:w-88 lg:pct:w-28 shadow:0px-4px-16px-BBBB bg-white">
+                        <blockquote class="twitter-tweet" data-lang="en-gb"><p lang="en" dir="ltr">Gave a 1 hour
+                            Python workshop for people on windows machines, all thanks to @pythonanywhere!
+                            #somuchwin</p>&mdash; Filipe Ximenes (@xima) 3 October 2015
+                        </blockquote>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section id="id_support_details" class="details-stripe bg-F2F2F2">
+        <section class="">
+            <header class="font-24 font-bold pad-y8 text-center">Tech Support for Developers, from Developers</header>
+            <section class="flex flex-column align-items-center lg:flex-row lg:justify-center lg:pct:w-72 pad-b4 mg-x-auto">
+                <section class="text-center lg:text-left lg:pad-r8">
+                    <div class="font-14 lh-36">
+                        7 days a week,
+                        <span title="Number of days is an average only, your year length may vary. This number is not a substitute for professional advice.  Always consult a licensed horologist, cronologist or other qualified time specialist before taking any decisions based on this number.">365.242</span>
+                        days a year, we're there for you. Got a question or a comment about PythonAnywhere? Need some
+                        help?
+                        Just
+                        post in our
+                        <a href="/forums/">forums</a>, drop a line to <a href="mailto:liveusercare@pythonanywhere.com">liveusercare@pythonanywhere.com</a>,
+                        or
+                        <a href="" class="feedback_link">send us feedback</a>, and one of our dev team will get back to
+                        you
+                        rightaway.
+                    </div>
+                    <header class="font-14 mg-t5 mg-b2">Some of the Devs. you'll meet</header>
+                    <div class="flex flex-row justify-center lg:justify-start flex-wrap">
+                        <div class="flex flex-column align-items-center pad-1 mg-r-1 lg:mg-r-2 font-bold radius">
+                            <img src="./assets/images/giles.png" width="100" class="radius"/>
+                            <div class="h-4 lh-4">Giles Thomas</div>
+                        </div>
+                        <div class="flex flex-column align-items-center pad-1 mg-r-1 lg:mg-r-2 font-bold radius">
+                            <img src="./assets/images/glenn.png" width="100" class="radius"/>
+                            <div class="h-4 lh-4">Glenn Jones</div>
+                        </div>
+                        <div class="flex flex-column align-items-center pad-1 mg-r-1 lg:mg-r-2 font-bold radius">
+                            <img src="./assets/images/filip.png" width="100" class="radius"/>
+                            <div class="h-4 lh-4">Filip Łajszczak</div>
+                        </div>
+                        <div class="flex flex-column align-items-center pad-1 mg-r-1 lg:mg-r-2 font-bold radius">
+                            <img src="./assets/images/pafk.png" width="100" class="radius"/>
+                            <div class="h-4 lh-4">Piotr Kaznowski</div>
+                        </div>
+                    </div>
+                </section>
+                <section class="pct:w-100 lg:pct:w-56 mg-x-auto">
+                    <div class="carousel slide flex flex-column">
+                        <div class="carousel-inner flex flex-row flex-nowrap justify-between overflow-x-auto pct:max-w-100 lh-32 pad-x4 pad-y4">
+                            <div class="item active shadow align-self-start flex-grow flex-noshrink bg-lighter mg-x2 pad-y8 pad-x2 radius pct:w-88 lg:pct:w-56 shadow:0px-4px-16px-BBBB bg-white">
+                                <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Thank u
+                                    @pythonanywhere teams 4 the super responsive support and clear tutorials. My site is
+                                    now up and running 😍😇</p>&mdash; Geneva Sapphire (@GenevaSapphire) November 3, 2017
+                                </blockquote>
+                            </div>
+                            <div class="item active shadow align-self-start flex-grow flex-noshrink bg-lighter mg-x2 pad-y8 pad-x2 radius pct:w-88 lg:pct:w-56 shadow:0px-4px-16px-BBBB bg-white">
+                                <blockquote class="twitter-tweet" data-conversation="none" data-lang="en"><p lang="en"
+                                                                                                             dir="ltr">
+                                    Great choice indeed — we’ve never had a problem with their wonderful service, and
+                                    their customer support response time is amazing!</p>&mdash; Nightwave Studios
+                                    (@VaduNightwave) September 19, 2017
+                                </blockquote>
+                            </div>
+                            <div class="item active shadow align-self-start flex-grow flex-noshrink bg-lighter mg-x2 pad-y8 pad-x2 radius pct:w-88 lg:pct:w-56 shadow:0px-4px-16px-BBBB bg-white">
+                                <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">How have ssl on
+                                    my site. Thanks to the super helpful people at @pythonanywhere! Your tutorials are
+                                    great.</p>&mdash; David Love (@Dvlv292) June 28, 2017
+                                </blockquote>
+                            </div>
+                            <div class="item active shadow align-self-start flex-grow flex-noshrink bg-lighter mg-x2 pad-y8 pad-x2 radius pct:w-88 lg:pct:w-56 shadow:0px-4px-16px-BBBB bg-white">
+                                <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Down tools. Move
+                                    over to @pythonanywhere with their game changing support. The only guys in town when
+                                    it comes to #Django #Python</p>&mdash; Robert Johnstone (@reliableitsys) October 21,
+                                    2016
+                                </blockquote>
+                            </div>
+                            <div class="item active shadow align-self-start flex-grow flex-noshrink bg-lighter mg-x2 pad-y8 pad-x2 radius pct:w-88 lg:pct:w-56 shadow:0px-4px-16px-BBBB bg-white">
+                                <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Thank you to
+                                    @pythonanywhere and @gpjt again for being awesome! #startup #entrepreneur #Python
+                                    #django #support #customerservice</p>&mdash; Robert Johnstone (@reliableitsys) 21
+                                    April 2016
+                                </blockquote>
+                            </div>
+                            <div class="item active shadow align-self-start flex-grow flex-noshrink bg-lighter mg-x2 pad-y8 pad-x2 radius pct:w-88 lg:pct:w-56 shadow:0px-4px-16px-BBBB bg-white">
+                                <blockquote class="twitter-tweet" data-lang="en"><p lang="fr" dir="ltr">@pytohs Je
+                                    confirme que chez @pythonanywhere ils sont très gentils. Leur S.A.V est très
+                                    choupinet.</p>&mdash; SamEtMax (@sam_et_max) 15 February 2016
+                                </blockquote>
+                            </div>
+                            <div class="item active shadow align-self-start flex-grow flex-noshrink bg-lighter mg-x2 pad-y8 pad-x2 radius pct:w-88 lg:pct:w-56 shadow:0px-4px-16px-BBBB bg-white">
+                                <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">@pythonanywhere
+                                    #amazing #support. And it just works. I installed #pylint per instructions in a
+                                    flash. #python #cloud #teaching #delight</p>&mdash; Tom Harris (@teachingengr) 24
+                                    September 2015
+                                </blockquote>
+                            </div>
+                            <div class="item active shadow align-self-start flex-grow flex-noshrink bg-lighter mg-x2 pad-y8 pad-x2 radius pct:w-88 lg:pct:w-56 shadow:0px-4px-16px-BBBB bg-white">
+                                <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">the folks at
+                                    @pythonanywhere not only provide an awesome platform but also amazing support
+                                    service. If you code #python you need to try it</p>&mdash; j.k. silver (@jksilver47)
+                                    25 August 2015
+                                </blockquote>
+                            </div>
+                            <div class="item active shadow align-self-start flex-grow flex-noshrink bg-lighter mg-x2 pad-y8 pad-x2 radius pct:w-88 lg:pct:w-56 shadow:0px-4px-16px-BBBB bg-white">
+                                <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Could Reddit&#39;s
+                                    @pythonanywhere testimonials be any more persuasive? #cloud #development #Python
+                                    #PaaS</p>&mdash; Cameron Laird (@Phaseit) 27 January 2015
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </section>
+    </section>
+    
+    <section class="pad-y12 bg-blue">
+        <div class="flex flex-column align-items-center lg:flex-row lg:justify-center text-center color-white">
+            <a href="/about/company_details/" class="pad-x3 color-white decoration-2 underline-offset-4 hover:underline-offset-6 hover:decoration-2 transition:all_400ms_ease">About PythonAnywhere</a>
+            -
+            <a href="/about/media_resources/" class="pad-x3 color-white decoration-2 underline-offset-4 hover:underline-offset-6 hover:decoration-2 transition:all_400ms_ease">Media Resources</a>
+            -
+            <a href="/about/jobs/" class="pad-x3 color-white decoration-2 underline-offset-4 hover:underline-offset-6 hover:decoration-2 transition:all_400ms_ease">Jobs</a>
+            -
+            <a href="/about/testimonials/" class="pad-x3 color-white decoration-2 underline-offset-4 hover:underline-offset-6 hover:decoration-2 transition:all_400ms_ease">Testimonials</a>
+        </div>
+        <footer id="id_copyright_div" class="footer text-center pad-t12 color-white">
+            <div>Copyright &copy; 2011-2022</div>
+            <div class="pad-y2 color-white">
+                <a href="/about/company_details/" class="color-inherit font-semibold">PythonAnywhere LLP</a>
+                &mdash;
+                <a href="/terms/" class="color-inherit font-semibold">Terms</a>
+                &mdash;
+                <a href="/privacy/" class="color-inherit font-semibold">Privacy & Cookies</a><br/><br>
+                "Python" is a registered trademark of the Python Software Foundation.
+            </div>
+        </footer>
     </section>
 
     <nav class="navbar top-nav hidden-xs relative pct:w-100 h-4 lh-4 bg-blue d-none">
@@ -372,7 +827,7 @@
     </nav>
 
 
-    <nav class="navbar primary-navbar lg:d-none">
+    <nav class="navbar primary-navbar d-none">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main_nav"
@@ -739,7 +1194,7 @@
 
     </div>
 
-    <div id="id_develop_anywhere_details" class="details-stripe">
+    <div id="id_develop_anywhere_details" class="details-stripe d-none">
 
         <div class="container">
             <div class="row">
@@ -919,7 +1374,7 @@
 
     </div>
 
-    <div id="id_education_details" class="details-stripe">
+    <div id="id_education_details" class="details-stripe d-none">
 
         <div class="container">
             <div class="row">
@@ -1088,7 +1543,7 @@
 
     </div>
 
-    <div id="id_support_details" class="details-stripe">
+    <div id="id_support_details" class="details-stripe d-none">
 
         <div class="container">
             <div class="row">
@@ -1221,7 +1676,7 @@
 
     </div>
 
-    <div class="container">
+    <div class="container d-none">
 
         <div class="row" id="id_company_info_strip">
             <div class="col-md-3">
@@ -1242,7 +1697,7 @@
         </div>
 
     </div>
-    <div id="id_footer" class="container">
+    <div id="id_footer" class="container d-none">
         <div class="row">
             <div class="col-md-3">
                 &nbsp;
@@ -1269,7 +1724,7 @@
 </div>
 
 
-<div id="id_ipad_image_modal" class="modal fade" role="dialog">
+<div id="id_ipad_image_modal" class="modal fade d-none" role="dialog">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -1341,6 +1796,11 @@
 <!--<script type="text/javascript">-->
 <!--    // $('.carousel').carousel()-->
 <!--</script>-->
+<script>
+    document.querySelector('[data-target="#main_nav"]').addEventListener('click', (evt) => {
+        document.querySelector('nav.navbar.primary-navbar').classList.toggle('d-none')
+    })
+</script>
 
 <!-- preload font awesome fonts to avoid glitch when switching icons -->
 <div style="width: 0; height: 0; overflow: hidden"><i class="fa fa-square-o fa-3x"></i></div>
