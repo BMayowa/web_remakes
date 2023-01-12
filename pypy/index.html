@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#" vocab="http://ogp.me/ns" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PyPy</title>
+    <link rel="shortcut icon" href="https://www.pypy.org/favicon2.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="assets/css/rst_base.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/nikola_rst.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/code.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/theme.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/styles.css" rel="stylesheet" type="text/css">
+    <meta name="theme-color" content="#5670d4">
+    <meta name="generator" content="Nikola (getnikola.com)">
+    <link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="rss.xml">
+    <link rel="canonical" href="https://www.pypy.org/">
+    <link rel="icon" href="favicon2.ico" sizes="16x16">
+    <link rel="icon" href="favicon32x32.ico" sizes="32x32">
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv-printshiv.min.js"></script><![endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/tipuesearch.css">
+    <meta name="author" content="The PyPy Team">
+    <meta property="og:site_name" content="PyPy">
+    <meta property="og:title" content="PyPy">
+    <meta property="og:url" content="https://www.pypy.org/">
+    <meta property="og:description" content="A fast, compliant alternative implementation of Python
+
+
+    Download PyPy
+What is PyPy ?
+Documentation (external link)
+
+
+
+On average, PyPy is 4.8 times faster than CPython 3.7
+
+
+
+PyPy (with JIT) ">
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2019-12-28T16:14:02Z">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans:100,200,300,300i,400,400i,700,700i"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+          integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="./assets/css/watched_eye.css" type="text/css" media="screen">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+          rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+            line-height: 40px;
+        }
+    </style>
+</head>
+<body class="mg-x-auto mg-y-0 bg-F2F7FB88">
+<section class="pct:w-100 mg-x-auto bg-FFFFFF">
+    <a href="https://www.pypy.org/#content" class="sr-only sr-only-focusable">Skip to main content</a>
+    <div id="container" class="">
+        <header id="header" class="relative pct:w-80 h-12 mg-x-auto mg-y4"><!-- Adapted from https://www.taniarascia.com/responsive-dropdown-navigation-bar -->
+            <section class="navigation">
+                <div class="nav-container d-block pct:w-100 h-8 lh-8">
+                    <div class="brand abs px:top-24 mg-0">
+                        <a href="https://www.pypy.org/#">
+                            <img id="toplogo" src="./PyPy_files/pypy-logo.svg" width="120" alt="PyPy/">
+                        </a>
+                    </div>
+                    <nav class="mg-0 text-center">
+                        <ul class="nav-list d-inline-block list-type-none pad-0 mg-0">
+                            <li class="d-inline-block mg-x3">
+                                <a href="https://www.pypy.org/#!" class="d-block h-12 lh-12 font-14 decoration-none color-initial hover:underline-offset-4 hover:underline hover:decoration-2">Features</a>
+                                <ul class="nav-dropdown" style="display: none;">
+                                    <li><a href="https://www.pypy.org/features.html">What is PyPy?</a></li>
+                                    <li><a href="https://www.pypy.org/compat.html">Compatibility</a></li>
+                                    <li><a href="https://www.pypy.org/performance.html">Performance</a></li>
+                                </ul>
+                            </li>
+                            <li class="d-inline-block mg-x3"><a href="https://www.pypy.org/download.html" class="d-block h-12 lh-12 font-14 decoration-none color-initial hover:underline-offset-4 hover:underline hover:decoration-2">Download</a></li>
+                            <li class="d-inline-block mg-x3"><a href="http://doc.pypy.org/" class="d-block h-12 lh-12 font-14 decoration-none color-initial hover:underline-offset-4 hover:underline hover:decoration-2">Dev Docs</a></li>
+                            <li class="d-inline-block mg-x3">
+                                <a href="https://www.pypy.org/#!" class="d-block h-12 lh-12 font-14 decoration-none color-initial hover:underline-offset-4 hover:underline hover:decoration-2">Blog</a>
+                                <ul class="nav-dropdown" style="display: none;">
+                                    <li><a href="https://www.pypy.org/blog/">Index</a></li>
+                                    <li><a href="https://www.pypy.org/categories/">Tags</a></li>
+                                    <li><a href="https://www.pypy.org/archive.html">Archive by year</a></li>
+                                    <li><a href="https://www.pypy.org/rss.xml">RSS feed</a></li>
+                                    <li><a href="https://morepypy.blogspot.com/">Old site</a></li>
+                                </ul>
+                            </li>
+                            <li class="d-inline-block mg-x3">
+                                <a href="https://www.pypy.org/#!" class="d-block h-12 lh-12 font-14 decoration-none color-initial hover:underline-offset-4 hover:underline hover:decoration-2">About</a>
+                                <ul class="nav-dropdown" style="display: none;">
+                                    <li><a href="https://twitter.com/pypyproject">Twitter</a></li>
+                                    <li><a href="https://libera.irclog.whitequark.org/pypy">IRC logs</a></li>
+                                    <li>
+                                        <a href="https://www.youtube.com/playlist?list=PLADqad94yVqDRQXuqxKrPS5QnVqbDLlRt">YouTube</a>
+                                    </li>
+                                    <li><a href="https://www.twitch.tv/pypyproject">Twitch</a></li>
+                                    <li><a href="https://www.pypy.org/pypy-sponsors.html">Sponsors</a></li>
+                                    <li><a href="https://www.pypy.org/howtohelp.html">How To Help?</a></li>
+                                    <li><a href="https://www.pypy.org/contact.html">Contact</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </nav>
+                    <div class="nav-mobile">
+                        <a id="nav-toggle" href="https://www.pypy.org/#!"> <span></span></a>
+                    </div>
+                </div>
+            </section>
+            <div class="searchform abs right-0 top-24 pct:w-16 focus-within:pct:w-20 transition:width_200ms_ease_200ms" role="search">
+
+                <form class="navbar-form navbar-left pct:w-100" action="https://www.pypy.org/search.html" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control pct:w-100 pad-x2 font-12" id="tipue_search_input" name="q" placeholder="Search…"
+                               autocomplete="off">
+                    </div>
+                    <input type="submit" value="Local Search" style="visibility: hidden; clip: rect(0 0 0 0)" class="d-block abs w-0 h-0 pad-0 mg-0">
+                </form>
+
+            </div>
+        </header>
+        <main id="content" class="pct:w-48 mg-x-auto pad-t12">
+            <article class="post-text storypage" itemscope="itemscope" itemtype="http://schema.org/Article" class="">
+                <header class="text-center">
+                    <h1 class="p-name entry-title d-block text-center" itemprop="headline name">
+                        <a href="https://www.pypy.org/" class="u-url font-120 decoration-none color-initial">PyPy</a>
+                    </h1>
+                </header>
+                <div class="e-content entry-content" itemprop="articleBody text">
+                    <div class="row">
+                        <div class="column pb-4 pct:w-64 mg-x-auto text-center">
+                            <p class="pct:w-96 font-18 mg-x-auto text-center mg-t8">
+                                A <a class="reference external color-initial font-semibold" href="http://speed.pypy.org/">fast</a>, <a
+                                    class="reference external color-initial font-semibold" href="https://www.pypy.org/compat.html">compliant</a>
+                                alternative implementation of <a class="reference external color-initial font-semibold" href="http://python.org/">Python</a>
+                            </p>
+                            <a id="download" href="https://www.pypy.org/download.html" class="d-block w-280 h-8 lh-8 pad-x4 mg-x-auto mg-t8 bg-darkolivegreen color-white border-darkolivegreen border-0 border-solid radius decoration-none font-14 font-semibold color-initial">
+                                <!--<img src="./PyPy_files/download.svg" width="16" class="v-align-middle mg-r-4 mg-b-4">-->
+                                Download PyPy
+                            </a>
+                            <p class="button d-inline-block pad-x4"><a class="reference external font-13 font-semibold color-initial" href="https://www.pypy.org/features.html">What
+                                is PyPy</a>?</p>
+                            <p class="button d-inline-block border-l-1 border-t-0 border-b-0 border-r-0 border-solid border-gray pad-x4"><a class="reference external font-13 font-semibold color-initial"
+                                                 href="https://doc.pypy.org/">Documentation</a></p>
+                        </div>
+                        <!--<div class="column pb-4">
+                            <img alt="PyPy logo" src="./PyPy_files/pypy-logo.svg" style="width: 300px;">
+                        </div>-->
+                    </div>
+                    <p class="small text-center pad-t8 font-14">On average, PyPy is <strong>4.8 times faster</strong> than CPython 3.7</p>
+                    <figure class="text-sm text-center font-13">
+                        <img alt="PyPy vs. Python speed comparison graph&quot;"
+                             src="./PyPy_files/pypy_speed_graph.png" style="width: 100%;" class="saturate90">
+                        <figcaption>
+                            <p class="">
+                                PyPy (with JIT) benchmark times normalized to CPython.
+                                Smaller is better.
+                                <br/> <span class="font-12 font-bold color-brown">**Based on the geometric average of all benchmarks</span>
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <p class="d-block pct:w-40 mg-x-auto mg-t12 border-solid border-1 border-lightgray radius-circle"></p>
+                    <blockquote class="literal-block pct:w-80 mg-x-auto font-16 text-center pad-t8">"... we are avid fans of PyPy and
+commensurately thankful for the great work by the PyPy team over the
+years. PyPy has enabled us to use Python for a larger part of our
+toolset than CPython alone would have supported, and its smooth
+integration with C/C++ through CFFI has helped us attain a better
+tradeoff between performance and programmer productivity in our
+projects"
+                        <div class="font-semibold h-6 lh-6 text-center">-- Vilhjálmur Þorsteinsson</div>
+                        <div class="text-center font-13">Founder and CEO of Miðeind, Feb 2022</div>
+                    </blockquote>
+                    <p class="d-block pct:w-40 mg-x-auto mg-t12 border-solid border-1 border-lightgray radius-circle"></p>
+                    <p class="text-center pad-t8 font-16"><strong>Advantages and distinct Features</strong></p>
+                    <ul class="simple d-block mg-x-auto pad-x4 font-14">
+                        <li><p><strong>Speed:</strong> thanks to its Just-in-Time compiler, Python programs
+                            often run <a class="reference external" href="http://speed.pypy.org/">faster</a> on PyPy. <a
+                                    class="reference external"
+                                    href="http://en.wikipedia.org/wiki/Just-in-time_compilation">(What is a JIT
+                                compiler?)</a></p></li>
+                        <li><p><strong>Memory usage:</strong> memory-hungry Python programs (several hundreds of
+                            MBs or more) might end up taking <a class="reference external"
+                                                                href="https://www.pypy.org/posts/2009/10/gc-improvements-6174120095428192954.html">less
+                                space</a> than they do in CPython.</p></li>
+                        <li><p><strong>Compatibility:</strong> PyPy is <a class="reference external"
+                                                                          href="https://www.pypy.org/compat.html">highly
+                            compatible</a> with existing python code.
+                            It supports <a class="reference external" href="https://cffi.readthedocs.org/">cffi</a>, <a
+                                    class="reference external" href="https://cppyy.readthedocs.org/">cppyy</a>, and can
+                            run popular python libraries like
+                            <a class="reference external" href="https://twistedmatrix.com/">twisted</a>, and <a
+                                    class="reference external" href="https://www.djangoproject.com/">django</a>. It can
+                            also run NumPy, Scikit-learn and more via a
+                            c-extension compatibility layer.</p></li>
+                        <li><p><strong>Stackless:</strong> PyPy comes by default with support for <a
+                                class="reference external" href="https://www.pypy.org/features.html#stackless">stackless
+                            mode</a>,
+                            providing micro-threads for massive concurrency.</p></li>
+                        <li><p>As well as other <a class="reference external" href="https://www.pypy.org/features.html">features</a>.
+                        </p></li>
+                    </ul>
+                </div>
+
+            </article>
+        </main>
+        <footer id="footer" class="text-center bg-d0dad5 pad-y4 mg-t12">
+            <p></p>
+            <div class="myfooter">
+                <div class="logotext">
+                    © 2023 <a href="mailto:pypy-dev@pypy.org">The PyPy Team</a>
+                    &nbsp; <br>
+                    Built with <a href="https://getnikola.com/" rel="nofollow">Nikola</a>
+                    &nbsp;
+                    Last built 2023-01-04T09:11
+                </div>
+                <div style="margin-left: auto">
+                    <a href="https://www.pypy.org/rss.xml">RSS feed</a>
+                </div>
+
+
+            </div>
+            <script src="./PyPy_files/jquery.min.js.download" crossorigin="anonymous"></script>
+            <script src="./PyPy_files/styles.js.download"></script>
+        </footer>
+    </div>
+</section>
+</body>
+</html>
